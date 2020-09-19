@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    padding: 0 4rem;
+    width: 100%;
+}
+.header{
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    .header-all{
+        overflow: hidden;
+        .left{
+            width: 20%;
+            float: left;
+            a{
+                text-decoration: none;
+                color: #fff;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+        .right{
+            width: 80%;
+            padding-top: 5px;
+            float: right;
+            text-align: right;
+            a{
+                text-decoration: none;
+                font-size: 14px;
+                color: #fff;
+                font-weight: bold;
+                margin: 0 10px;
+
+            }
+        }
+
+
+    }
+}
+
+.first{
+    background-image: url(http://startbootstrap.github.io/startbootstrap-creative/assets/img/bg-masthead.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 13rem 0;
+    position: relative;
+    z-index: 99;
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -99;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(92, 77, 66, 0.8);
+        opacity: .7;
+    }
+    .first-text{
+        text-align: center;
+        h1{
+            color: #fff;
+            font-size: 56px;
+            text-transform: uppercase;
+
+        }
+        hr{
+            background-color: #f4623a;
+            height: 4px;
+            width: 50px;
+            border: none;
+            margin: 20px auto;
+         }
+         p{
+             font-size: 18.4px;
+             color: #fff;
+             margin-bottom: 50px;
+         }
+         a{
+             background-color: #f4623a;
+             color: #fff;
+             font-weight: bold;
+             padding: 20px 36px;
+             border-radius: 50px;
+             text-decoration: none;
+             transition: .4s;
+             &:hover{
+                 background-color: #491507;
+             }
+         }
+      
+    }
+}
+.second{
+    background-color: #f4623a;
+    padding: 5rem 0;
+    .second-text{
+        text-align: center;
+        h2{
+            font-size: 32px;
+            color: #fff;
+        }
+        hr{
+            background-color: #fff;
+            height: 4px;
+            width: 50px;
+            border: none;
+            margin: 20px auto;
+
+        }
+        p{
+            font-size: 18px;
+            color: #fff;
+            opacity: 0.5;
+            margin-bottom: 40px;
+        }
+        
+        a{
+            background-color: #fff;
+            color: #000;
+            font-weight: bold;
+            padding: 20px 36px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: .4s;
+            &:hover{
+                background-color: rgb(121, 116, 116);
+            }
+        }
+    }
+}
+.third{
+    padding: 5rem 0;
+    .third-text{
+        text-align: center;
+        h2{
+            font-size: 32px;
+            color: #212529;
+        }
+        
+        hr{
+            background-color:#f4623a;
+            height: 4px;
+            width: 50px;
+            border: none;
+            margin: 20px auto;
+
+        }
+    }
+    .all{
+        margin-top: 70px;
+        
+        .box{
+            float: left;
+            width: 25%;
+            text-align: center;
+            i{
+                font-size: 60px;
+                color: #f4623a;
+            }
+            h3{
+                font-size: 25px;
+                color: #212529;
+                margin: 10px 0;
+            }
+            p{
+                color: #6c757d;
+                font-size: 16px;
+
+            }
+
+        }
+    }
+
+}
+.photos{
+    margin: 8rem 0;
+    .photo-box{
+        .box{
+            float: left;
+            width: 33.3%;
+            position: relative;
+            &:hover{
+                .overlay{
+                    opacity: .8;
+                }
+                .box-text{
+                    opacity: 1;
+
+                }
+            }
+            img{
+                width: 100%;
+            }
+            .overlay{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                transition: .4s;
+                height: 100%;
+                opacity: 0;
+                background-color: #f4623a;
+            }
+            .box-text{
+                position: absolute;
+                top: 50%;
+                text-align: center;
+                left: 50%;
+                opacity: 0;
+                transition: .4s;
+                transform: translate(-50%,-50%);
+                h4{
+                    color: #fff;
+                }
+                h5{
+                    color: rgb(219, 204, 204);
+                }
+            }
+        }
+    }
+}
+.clear{
+    clear: both;
+}
+
+.last{
+    padding: 5rem 0;
+    background-color: #343A40;
+    .last-text{
+        text-align: center;
+        h2{
+            font-size: 32px;
+            color: #fff;
+            margin-bottom: 50px;
+        }
+        a{
+            background-color: #fff;
+            color: black;
+            font-weight: bold;
+            padding: 20px 36px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: .4s;
+            &:hover{
+                background-color: rgb(148, 144, 139);
+            }
+        }
+    }
+}
+
+.end{
+    padding: 5rem 0;
+
+    .end-text{
+        text-align: center;
+
+        h2{
+            font-size: 32px;
+            color: #212529;
+        }
+        
+        hr{
+            background-color:#f4623a;
+            height: 4px;
+            width: 50px;
+            border: none;
+            margin: 20px auto;
+
+        }
+        p{
+            font-size: 20px;
+            color: #6C757D;
+            margin-bottom: 70px;
+        }
+
+    }
+}
+
+.end-all{
+
+    .box{
+        float: left;
+        width: 50%;
+        text-align: center;
+    }
+    i{
+        font-size: 50px;
+        color: #494b4d;
+        margin-bottom: 15px;
+        
+    }
+    p{
+        font-size: 20px;
+    }
+    a{
+        color: rgb(211, 42, 42);
+        font-size: 20px;
+        
+    }
+
+
+}
+
+.son{
+    padding: 12rem 0 5rem 0;
+    text-align: center;
+    .second-text{
+        font-size: 12.8px;
+        color: #646769;
+    }
+}
